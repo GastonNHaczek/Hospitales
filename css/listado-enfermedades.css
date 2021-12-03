@@ -1,0 +1,76 @@
+h1{
+    text-align: center;
+}
+
+main h2{
+    color: white;
+}
+
+.buscar{
+    margin: 2% 0;
+    width: 100%;
+    height: 50px;
+    background-color: #118DA6;
+    display: flex;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.buscar form{
+    width: 15%;
+}
+
+
+.contenedor article{
+    display: flex;
+    flex-direction: row;
+    margin-top:10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    border: 5px #4295A6 solid;
+}
+
+.imagen-enfermedad{
+    width: 250px;
+    height: 150px;
+    margin:20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px -2px rgba(0,0,0,0.2);
+    
+}
+
+.imagen-enfermedad img{
+    width: 200px;
+    height: 150px;
+}
+
+.descripcion-enfermedad{
+    height: 150px;
+    text-align: left;
+    padding: 5px;
+    align-self: center;
+
+    }
+
+.contenedor h2{
+    margin-bottom: 10px;
+ 
+}
+
+/*boton*/
+.boton{
+   
+    display: inline-block;
+    font-weight: bold;
+    padding: 5px 5px;
+    background: #3482c4;
+    color: white;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.boton:hover{
+    opacity: .5;
+}

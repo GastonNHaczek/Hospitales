@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding:0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    text-align: center;
+}
+
+h2{
+    color:white;
+    background-color: #1c6674;
+    font-size:2em;
+    padding: 1.2em; 
+}
+
+section iframe{
+    margin: 2em;
+    width: 80%;
+    height: 20em;
+    border-radius: 40px;   
+}
+
+
+main article{
+    background-color: #1c6674;
+}
+
+aside{
+    display: flex;
+    width: 50%;
+    margin: 1em auto;
+}
+aside div{
+    width: 100%;
+    padding: 10px;
+    background-color: #2a97ad;
+    align-items: center;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);         
+}
+
+aside div ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+} 
+aside div ul li{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+aside div img{
+          
+    width: 90%;
+    border-radius: 5%;
+}
+
+aside div h5{
+    font-size: 1.4em;
+    color: white;
+    text-align: center;
+    background-color: #1c6674;
+    padding: 40px;
+}
+
+aside div ul li h6{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 0.9em;
+    font-size: 1.4em;
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+.direccion{
+    background-color: #2a97ad;
+    display: block;
+    border-radius: 20px;
+    margin: 1% 0;
+    color: white;
+    padding: 3%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44); 
+}
+aside div ul li a{
+    color:white;
+    text-align: center;
+
+}
+aside div ul li a:hover{
+    color:rgba(255, 255, 255, 0.534);
+}
+
+.italiano,.buen-pastor,.haedo{
+    background-color: #1c6674;
+    position: absolute;
+    color: white;
+    text-align: center;
+    padding: 2em;
+    border-radius: 20px;
+    width: 100%;
+    
+    z-index: 3000;
+    display: none;
+}
+.x-italiano,.x-buen-pastor,.x-haedo{
+    font-size: 1.2em;
+    display: block;
+    position: absolute;
+    top:10%;
+    left: 90%;
+    color:rgb(247, 144, 144);
+}
+
+@media screen and (min-width: 60em){
+
+    main div{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;    
+    }
+
+    div section,aside{
+        width: calc(50% - 2em);
+        margin: 3%;
+         
+    }
+
+    section iframe{
+        width: 100%;
+        height: 50em;
+        border-radius: 40px;   
+    }
+
+    aside{
+        display: flex;
+        width: 15%;
+        margin: 1em 0;
+    }
+}
+

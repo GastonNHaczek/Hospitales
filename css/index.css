@@ -1,0 +1,194 @@
+
+body{
+    width: auto;
+}
+
+.corrusel{
+    display: block;
+    width: 90%;
+    margin: 1em auto;
+}
+.corrusel img{
+    width: 100%;
+}
+
+.informacion{
+    height: 50%;
+    margin: 5% auto;
+    display: block;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.informacion article{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.informacion div{
+    margin: 0 auto;
+    height:60%;
+    width: 100%;
+    padding: 2%;
+    background-color: #2a97ad;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);
+}
+
+.informacion img{
+    width: 13%;
+    padding-top:2% ;
+    border-radius: 50%;
+}
+
+.informacion p{
+    width: 90%;
+    padding: 1em;
+    color: white;
+    text-align: left;
+}
+.sobre-la-clinica p{
+    display: none;
+} 
+.cuerpo-medico p{
+    display: none;
+}
+
+.dias-horarios p{
+    display: none;
+}
+div h4:hover{
+    background-color: rgba(255, 255, 255, 0.342);
+}
+
+
+.informacion h4{
+    text-align: center;
+    color: white;
+    padding: 2%;
+    background-color: #1c6674;
+}
+        
+.arriba{
+    display: block;
+    width: 2em;
+    height: 2em;
+    background-color: #2a97ad;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    background-image: url(../img/arriba.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 1000;
+    border: 2px solid #1c6674;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);
+}
+.arriba:hover{
+    opacity: 0.8; 
+}
+
+.llama-al-148{
+    height: 50%;
+    width: 100%;
+    background-color: #2a97ad;
+    padding: 3% 0%;
+    margin-bottom: 5%;
+}
+
+.llama-al-148 article{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.llama-al-148 article div{
+    display: block;
+    justify-content: center;
+    height: auto;
+    width: 50%;
+}
+.llama-al-148 article .numero{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 50%;
+}
+
+.llama-al-148 p{
+    font-size: 1em;
+}
+
+.llama-al-148 .llama{
+    padding-top: 1%;
+    font-size: 2em;
+}
+.fas{
+    font-size: 5em;
+}
+
+.numero p strong{
+    font-size: 4em;
+}
+@media screen and (min-width: 50em){
+    .informacion{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 5% 0;
+    }
+    .informacion article{
+        width: 30%;
+
+    }
+    .informacion div{
+        padding-bottom: 20%;
+    }
+    .informacion p{
+        display: block;
+    }
+    div h4:hover{
+        background-color:#1c6674;
+    }
+    .informacion img{
+        width: 40%;
+        padding-top:2% ;
+        border-radius: 50%;
+    }
+    .arriba{      
+        width: 4em;
+        height: 4em;
+    }
+
+    .llama-al-148 p{
+        font-size: 2em;
+    }
+    
+    .llama-al-148 .llama{
+        font-size: 6em;
+    }
+
+    .fas{
+        font-size: 15em;
+    }
+
+    .numero p strong{
+        font-size: 7em;
+    }
+
+    .informacion p{
+        font-size: 2em;
+    }
+
+    .informacion h4{
+        font-size: 3em;
+    }
+}

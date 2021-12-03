@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*revisado*/
+main{
+    font-family: 'Roboto', sans-serif; 
+    background-color: #fff;
+    margin: 75px 0px;
+}
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+.contenedor p{
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.columna-izq div {
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 37px -5px rgba(0,0,0,0.66);
+    -moz-box-shadow: 0px 0px 37px -5px rgba(0,0,0,0.66);
+    box-shadow: 0px 0px 37px -5px rgba(0,0,0,0.66);
+    border-radius: 25px; 
+    background-color: #1c6674;
+}
+
+.columna-izq {
+    width: 40%;
+    color:white;   
+    
+}
+article iframe{
+    position: relative;
+    top: 55px;
+    height: 55%;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 37px -5px rgba(0,0,0,0.66);
+    -moz-box-shadow: 0px 0px 37px -5px rgba(0,0,0,0.66);
+    box-shadow: 0px 0px 37px -5px rgba(0,0,0,0.66);
+    border-radius: 25px;
+}
+.columna-der {
+   
+    padding: 10px 30px;
+    background-color: #1c6674;
+    -webkit-box-shadow: 0px 0px 37px -5px rgba(0,0,0,0.66);
+    -moz-box-shadow: 0px 0px 37px -5px rgba(0,0,0,0.66);
+    box-shadow: 0px 0px 37px -5px rgba(0,0,0,0.66);
+    border-radius: 25px;
+}
+
+.columna-der input, textarea,label{
+    color: white;
+    display:block;
+    margin: 0.3em;
+    border-color: black;
+    border-radius: 6px;
+    
+        
+}
+.columna-der input ,textarea{
+    color: black;
+}
+
+#palabras-restantes{
+    
+    font-size: 15px;
+    color: white;
+    text-align: end;
+   
+}
+#palabras-restantes p{
+    text-align: left;
+}
+#mensaje  p{
+    position: relative;
+    left: 0;
+    margin: 2%;
+    padding: 3%;
+    color: rgb(245, 56, 56);
+    background-color: #fa96b4;
+    border-radius: 1em;
+    text-align: center;
+}

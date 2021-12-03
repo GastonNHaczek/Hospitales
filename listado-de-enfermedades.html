@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/ed0b8e39e2.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de enfermedades</title>
+    <link rel="stylesheet" href="css/listado-enfermedades.css">
+    <link rel="stylesheet" href="css/header-foooter.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/header-footer-funciones.js"></script>
+    
+</head>
+<body>
+
+    <header id="inicio">
+        <nav class="menu">
+            <div class="logo-mobile"></div>
+            <a class="hamburguesa"></a>
+
+            <form action="#" method="post">
+                <datalist id="informacion">
+                <option value="COVID-19">
+                <option value="Fiebre hemorrágica por el virus del Ébola"></option>
+                <option value="Influenza">                       
+                <option value="Sarampión"></option>
+                <option value="Varicela y herpes zóster (culebrilla)"></option>
+                </datalist>
+                <input type="text" name="postal" list="informacion" class="barra-busqueda">
+                <input type="submit" value="." class="lupa">
+            </form>
+            
+        </nav>
+
+        <div >   
+            <nav class="ocultar-menu">                   
+                <ul class="menu-escritorio"> 
+                    <li>
+                        <a href="index.html" class="logo">                                
+                        <h1>Clinica UNLaM</h1>
+                        </a>
+                    </li>
+                  
+                    <li>
+                        <a href="listado-de-enfermedades.html">Listado de enfermedades</a>
+                    </li>
+                  
+                    <li>
+                        <a href="mapa.html">Centros de Salud cercanos</a>
+                    </li>
+
+                    <li>
+                        <a href="contacto.html">Información de Contacto</a>
+                    </li>
+                    <li>
+                        <a href="calendario.html">Calendario de Vacunación</a>
+                    </li>
+                    <div class="barra-busqueda-escritorio">
+                        <form action="#" method="post">
+                            <datalist id="informacion">
+                            <option value="COVID-19">
+                            <option value="Fiebre hemorrágica por el virus del Ébola"></option>
+                            <option value="Influenza">                       
+                            <option value="Sarampión"></option>
+                            <option value="Varicela y herpes zóster (culebrilla)"></option>
+                            </datalist>
+                            <input type="text" name="postal" list="informacion" class="barra-busqueda">
+                            <input type="submit" value="." class="lupa">
+                        </form>
+                    </div>
+                </ul>
+            </nav> 
+        </div>
+
+        
+    </header>
+
+    <main>
+      <div class="buscar">
+        <h2>ENFERMEDADES</h2>
+        <form action="#" method="post">
+            <datalist id="informacion">
+                <option value="COVID-19">
+                <option value="Fiebre hemorrágica por el virus del Ébola"></option>
+                <option value="Influenza">
+                <option value="Sarampión"></option>
+                <option value="Varicela y herpes zóster (culebrilla)"></option>
+            </datalist>
+            <input type="text" name="postal" list="informacion">
+            <input type="submit" value="." class="lupa">
+        </form>
+      </div>
+    
+        <section class="contenedor">
+
+              <article>
+
+                 <img class="imagen-enfermedad" src="img/resfrio.jpg" alt="resfrio-comun">
+                  <div class="descripcion-enfermedad">
+                  <h3>COVID-19</h3>
+                  <p>Qué es el Coronavirus, cómo se contagia. Enterate toda la información sobre el COVID-19. Conocé más sobre las recomendaciones y las medidas de prevención para combatir al virus. Disposiciones Comunes. Síntomas. Cuidados Principales.</p>
+                  <a href="detalle-de-enfermedad.html" class="boton">Leer mas </a>
+                  </div>
+
+              </article> 
+
+              <article>
+
+                  <img class="imagen-enfermedad" src="img/ebola.jpg" alt="ebola">
+                  <div class="descripcion-enfermedad">
+                  <h3>Fiebre hemorrágica por el virus del Ébola</h3>
+                  <p>Información sobre la FIEBRE HEMORRÁGICA POR VIRUS DEL ÉBOLA. ¿Qué es la fiebre hemorrágica Ébola? Es una enfermedad conocida desde el año ...</p>
+                  <a href="detalle-de-enfermedad.html" class="boton">Leer mas </a>
+                  </div>
+
+              </article>  
+
+              <article>
+
+                 <img class="imagen-enfermedad" src="img/influenza.png" alt="influenza">
+                  <div class="descripcion-enfermedad">
+                  <h3>Influenza.</h3>
+                  <p>A la gripe la causa el virus "influenza". Se contagia cuando la gente expulsa gotitas infectadas por el virus al toser o al estornudar, y otras personas las inspiran.</p>
+                  <a href="detalle-de-enfermedad.html" class="boton">Leer mas </a>
+                  </div>
+
+              </article>
+
+              <article>
+            
+                  <img class="imagen-enfermedad" src="img/sarampion.jpeg" alt="sarampion">
+                  <div class="descripcion-enfermedad">
+                  <h3>Sarampión.</h3>
+                  <p>El sarampión es una infección infantil causada por un virus. En una época fue bastante frecuente pero en la actualidad se puede prevenir ...</p>
+                  <a href="detalle-de-enfermedad.html" class="boton">Leer mas </a>
+                  </div>
+
+              </article>  
+              <article>
+
+                  <img class="imagen-enfermedad" src="img/varicela.jpg" alt="varicela-herpes">
+                  <div class="descripcion-enfermedad">
+                  <h3>Varicela y herpes zóster (culebrilla)</h3>
+                  <p>Ese es el mismo virus que ocasiona la varicela. Primer plano de lesión por herpes zoster (culebrilla). Causas ...</p>
+                  <a href="detalle-de-enfermedad.html" class="boton">Leer mas </a>
+                  </div>
+
+              </article> 
+
+        </section>
+    </main>    
+    <footer >
+
+        <article class="columna1">
+            <h6>Datos del grupo</h6>
+            <ul>
+                <li>
+                    <p>Gaston Nahuel Haczek - 41882840</p>
+                </li>
+                <li>
+                    <p>Uriel Iván Schiavone - 41757710</p>
+                </li>
+            </ul>
+        </article>
+
+        <article class ="columna2">
+            <h6>Menu inferior</h6>
+            <ul>
+                <li>
+                    <a href="listado-de-enfermedades.html">Listado de enfermedades</a>
+                </li>
+                <li>
+                    <a href="mapa.html">Hospitales</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </article>
+
+        <article class="columna3"><h6>Redes Sociales</h6>
+
+                <div>
+                    <a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                    <a target="_blank" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                </div>
+                
+        </article>
+
+    </footer>
+</body>
+</html>

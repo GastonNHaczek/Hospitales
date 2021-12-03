@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/ed0b8e39e2.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario deteccion COVID19</title>
+    <script src="https://kit.fontawesome.com/ed0b8e39e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/detalle-de-enfermedad.css">
+    <link rel="stylesheet" href="css/header-foooter.css">
+    <script src="js/js_detalle_de_enfermedad.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/header-footer-funciones.js"></script>
+</head>
+<body>
+    <header id="inicio">
+        <nav class="menu">
+            <div class="logo-mobile"></div>
+            <a class="hamburguesa"></a>
+
+            <form action="#" method="post">
+                <datalist id="informacion">
+                <option value="COVID-19">
+                <option value="Fiebre hemorrágica por el virus del Ébola"></option>
+                <option value="Influenza">                       
+                <option value="Sarampión"></option>
+                <option value="Varicela y herpes zóster (culebrilla)"></option>
+                </datalist>
+                <input type="text" name="postal" list="informacion" class="barra-busqueda">
+                <input type="submit" value="." class="lupa">
+            </form>
+            
+        </nav>
+
+        <div >   
+            <nav class="ocultar-menu">                   
+                <ul class="menu-escritorio"> 
+                    <li>
+                        <a href="index.html" class="logo">                                
+                        <h1>Clinica UNLaM</h1>
+                        </a>
+                    </li>
+                  
+                    <li>
+                        <a href="listado-de-enfermedades.html">Listado de enfermedades</a>
+                    </li>
+                  
+                    <li>
+                        <a href="mapa.html">Centros de Salud cercanos</a>
+                    </li>
+
+                    <li>
+                        <a href="contacto.html">Información de Contacto</a>
+                    </li>
+                    <li>
+                        <a href="calendario.html">Calendario de Vacunación</a>
+                    </li>
+                    <div class="barra-busqueda-escritorio">
+                        <form action="#" method="post">
+                            <datalist id="informacion">
+                            <option value="COVID-19">
+                            <option value="Fiebre hemorrágica por el virus del Ébola"></option>
+                            <option value="Influenza">                       
+                            <option value="Sarampión"></option>
+                            <option value="Varicela y herpes zóster (culebrilla)"></option>
+                            </datalist>
+                            <input type="text" name="postal" list="informacion" class="barra-busqueda">
+                            <input type="submit" value="." class="lupa">
+                        </form>
+                    </div>
+                </ul>
+            </nav> 
+        </div>
+
+        
+    </header>
+    <main>
+     
+      <h2> CORONAVIRUS (COVID-19)</h2>
+    <section class="enfermedad">
+        <article class="foto-enfermedad">
+            <img src="img/coronavirus.jpg" alt="covid">
+        </article>
+        
+        <article class="caracteristicas">
+           <p>Los coronavirus son una familia de virus que pueden causar enfermedades en animales y en humanos. En los seres humanos pueden provocar infecciones respiratorias que van desde un resfrío común hasta enfermedades más graves, como el síndrome respiratorio de Medio Oriente (MERS) y el síndrome respiratorio agudo severo (SRAS-SARS). <br>
+           Actualmente nos encontramos ante una pandemia (epidemia que se propaga a escala mundial) por un nuevo coronavirus, SARS-CoV-2, que fue descubierto recientemente y causa la enfermedad por coronavirus COVID-19. <br>
+           Se transmite de una persona a otra a través de las gotas procedentes de la nariz o la boca que salen despedidas cuando la persona con el virus tose, estornuda o habla. Otra posibilidad es por contacto con manos, superficies u objetos contaminados. Por eso es importante mantener distanciamiento social y tomar las precauciones de contacto que se describen más abajo.
+           </p>
+            
+        </article>
+        
+    </section>
+    
+     <h2> FORMULARIO DE DETECCION (TEST) DE CORONAVIRUS (COVID-19)</h2>
+
+    <section class="contenedor">
+      <article class="descripcion">
+        <p>Hola usuario! Si tienes síntomas de <strong>CORONAVIRUS (COVID-19)</strong> o has estado en contacto con una persona afectada deberías hacer un control y seguimiento diario de tus síntomas. Esta aplicación te permitirá hacer un seguimiento de la evolución de los síntomas y te dará las indicaciones y consejos a seguir en cada caso. El uso de este servicio supone la aceptación de los términos y la política de privacidad descritos en <em>"Ver las condiciones y políticas”</em></p>
+        <div class="sintomas">    
+           <h4>SINTOMAS</h4>
+           <img src="img/23-fiebre-tos.png" alt="fiebre-tos">
+           <img src="img/25-fiebre-dificultad-respirar.png" alt="dificultad-respirar">
+           <img src="img/24-fiebre-dolor-garganta.png" alt="fibre-dolor garganta">
+      </div>
+         </article>
+          
+        <article class="formulario">
+            <form action="#" onsubmit="return validarFormulario()">
+                <label for="nombre">Nombre: </label>
+                    <br>
+                    <input type="text" name="nombre" id="Nombre" value="" placeholder="Ej: Jose*">
+                    <br>
+                <label for="apellido">Apellido: </label>
+                    <br>
+                    <input type="text" name="apellido" id="Apellido" value="" placeholder="Ej: Fernandez*">
+                    <br>
+                <label for="dni">DNI: </label>
+                    <br>
+                    <input type="text" name="dni" id="dni" value="" placeholder="Ej: 10101010*">
+                    <br>
+                <label for="telefono">Telefono: </label> 
+                    <br>
+                    <input type="tel" name="telefono" id="telefono" value="" placeholder="Ej: 0000-0000*">
+                    <br>
+                <label for="ciudad">Ciudad: </label>
+                    <br>
+                    <input type="text" name="ciudad" id="Ciudad" value="" placeholder="Ej: San Justo*">
+                    <br>
+                <label for="sexo">Sexo</label>
+                    <br> 
+                    <input id="hombre" type="radio" name="Sexo" value="hombre"> Hombre
+                    <input id="mujer" type="radio" name="Sexo" value="mujer"> Mujer
+                    <input id="otro" type="radio" name="Sexo" value="otro"> Otro
+                    <br>
+                <label for="visita">¿Has viajado al exterior de la República Argentina? </label> 
+                    <br>
+                    <input id="visita" type="radio" name="Paises Visitados" value="si" onclick="mostrarOcultarPaises()"> Si
+                    <input id="visita" type="radio" name="Paises Visitados" value="no" onclick="mostrarOcultarPaises()">No 
+                    <br>
+                    <div id="visitados">
+                        <label for="visitados">¿Que paises visito?</label>
+                        <br>
+                        <select id="paises" name="paises">
+                            <option value="0">Seleccione un país</option>
+                            <option value="1">China</option>
+                            <option value="2">EEUU</option>
+                            <option value="3">Brasil</option>
+                            <option value="4">Otros</option>
+                        </select>
+                        <br>
+                    </div>
+                <label for="fiebre">¿Tuviste Fiebre mayor a 38 grados? </label>
+                    <br> 
+                    <input id="fiebre" type="radio" name="Fiebre" value="si"> Si
+                    <input id="fiebre" type="radio" name="Fiebre" value="no"> No
+                    <br>
+                <label for="cabeza">¿Tuviste dolor de cabeza? </label>
+                    <br> 
+                    <input id="cabeza" type="radio" name="Dolor de Cabeza" value="si"> Si
+                    <input id="cabeza" type="radio" name="Dolor de Cabeza" value="no"> No
+                    <br>
+                <label for="tos">¿Tuviste una tos persistente? </label>
+                    <br> 
+                    <input id="tos" type="radio" name="Tos" value="si"> Si
+                    <input id="tos" type="radio" name="Tos" value="no"> No
+                    <br>
+                <label for="dolor_garganta">¿Tuviste dolor de garganta? </label>
+                    <br> 
+                    <input id="dolor_garganta" type="radio" name="Dolor de Garganta" value="si"> Si
+                    <input id="dolor_garganta" type="radio" name="Dolor de Garganta" value="no"> No
+                    <br>
+                <label for="respirar">¿Tuviste dificultades para respirar?</label> 
+                    <br>
+                    <input id="respirar" type="radio" name="Dificultad al Respirar" value="si" onclick="mostrarOcultarDireccion()"> Si
+                    <input id="respirar" type="radio" name="Dificultad al Respirar" value="no" onclick="mostrarOcultarDireccion()"> No
+                    <br>
+                <div id="direccion">
+                    <label for="ingresar_direccion">Direccion:</label> 
+                    <br>
+                    <input type="text" name="direccion" id="Direccion" placeholder="Ej: Av de Mayo 1789*">
+                    <br>
+                </div>
+                <label for="terminos">Aceptar los Terminos y Condiciones</label> 
+                    <input type="checkbox" name="terminos" id="terminos"> 
+                    <br>
+                <button type="submit" value="Enviar">Enviar Test</button>
+                <div class="mensaje" id="mensaje"></div>
+            </form>
+        </article>
+
+    </section>
+    <H2 class="titulo">MEDIDAS DE PRECAUCION</H2>
+    <section class="medidas-precaucion">
+
+        <img src="img/14-lavarse-manos.png" alt="manos">
+        <img src="img/16-tocar-nariz.png" alt="tocar">
+        <img src="img/15-estornudar.png" alt="estornudar-codo">
+        <img src="img/17-ventilar.png" alt="ventilar-bien">
+        <img src="img/18-limpiar-objetos.png" alt="limpiar">
+        <img src="img/20-reducir-contacto.png" alt="reducir-contacto">
+        <img src="img/19-permanecer-domicilio.png" alt="domicilio">
+        <img src="img/21-no-compartir-mate.png" alt="no-compartir-objetos">
+        
+    </section>
+    <h2 class="titulo">HOSPITAL MAS CERCANO ESPECIALIZADO EN LA ENFERMEDAD</h2>
+    <section class="hospital-cercano">
+        <article class="nombre-hospital">
+            <h3>Clinica UNLaM</h3>
+            <p>Direccion: Florencio Varela 1903 (B1754JEC) San Justo, Buenos Aires, Argentina</p>
+            <p>Tel: 12345678912</p>
+            <p>Mail: Unlam@Unlam.com.ar</p>
+            <p>https://www.unlam.edu.ar/</p>
+        </article>
+        <article class="imagen-hospital">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13127.274308684602!2d-58.60638360994524!3d-34.65928442484983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospitales!5e0!3m2!1ses-419!2sar!4v1601939345085!5m2!1ses-419!2sar" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </article>
+    </section>
+    </main>
+    <footer >
+
+        <article class="columna1">
+            <h6>Datos del grupo</h6>
+            <ul>
+                <li>
+                    <p>Gaston Nahuel Haczek - 41882840</p>
+                </li>
+                <li>
+                    <p>Uriel Iván Schiavone - 41757710</p>
+                </li>
+            </ul>
+        </article>
+
+        <article class ="columna2">
+            <h6>Menu inferior</h6>
+            <ul>
+                <li>
+                    <a href="listado-de-enfermedades.html">Listado de enfermedades</a>
+                </li>
+                <li>
+                    <a href="mapa.html">Hospitales</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </article>
+
+        <article class="columna3"><h6>Redes Sociales</h6>
+
+                <div>
+                    <a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                    <a target="_blank" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                </div>
+                
+        </article>
+
+    </footer>
+</body>
+</html>
